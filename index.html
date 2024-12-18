@@ -1,0 +1,93 @@
+<HTML>
+<HEAD>
+  <TITLE>Currículo de Suellen</TITLE>
+  <STYLE>
+    body {
+      background-image: url('MARMORE.JPG');
+      background-attachment: fixed;
+      color: #4c0027;
+    }
+    
+    .foto {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 50px auto;
+      display: block;
+      border: 1px solid #4c0027;
+    }
+    
+    .botao-esquerda, .botao-direita {
+      position: absolute;
+      top: 10px;
+      color: #FFFFFF;
+      background-color: #4c0027;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .botao-esquerda {
+      left: 10px;
+    }
+    
+    .botao-direita {
+      right: 10px;
+    }
+  </STYLE>
+</HEAD>
+<BODY>
+  <button class="botao-esquerda" onclick="mostrarDados()">Dados Pessoais</button>
+  <button class="botao-direita" onclick="mostrarEscolaridade()">Escolaridade</button>
+  
+  <H1 ALIGN="CENTER">CURRICULUM VITAE</H1>
+ <center><img src="su.jpg" class="foto"></center>
+  <HR>
+  <MARQUEE>
+    <H2>SUELLEN BISPO</H2>
+  </MARQUEE>
+  <H3><p align=justify>Sou Suellen Bispo Carvalho Santos e estou em busca de uma oportunidade de emprego que me permita aplicar minhas habilidades, desenvolver novas competências e iniciar minha carreira profissional com dedicação e comprometimento. Estou pronta para contribuir de forma proativa para o crescimento da empresa e para meu desenvolvimento pessoal e profissional.</H3></p align=justify>
+  
+  <div id="dados" style="display:none;">
+    <H3><I>DADOS PESSOAIS:</I></H3>
+    <UL>
+      <Li>Endereço: Rua Manoel Carlos de Sales, Ouriçangas, casa sem número </li>
+      <li>Email: suellenbispo281@gmail.com</li>
+      <li>Celular: 75 98318-7192</li>
+    </UL>
+  </div>
+  
+  <div id="escolaridade" style="display:none;">
+    <H3><I>ESCOLARIDADE:</I></H3>
+    <UL>
+<Li>Integrado em Informática - <A Title="Instituto Federal Baiano Campus Alagoinhas" Href="https://www.ifbaiano.edu.br/unidades/alagoinhas/" target="_blank">Instituto Federal Baiano Campus Alagoinhas</A></Li>
+  </UL>
+  </div>
+  
+  <AUDIO CONTROLS>
+    <SOURCE SRC="ANDARCOMFÉ.MPEG" TYPE="AUDIO/OGG">
+    <SOURCE SRC="ANDARCOMFÉ.MPEG" TYPE="AUDIO/MPEG">
+  
+  <script>
+    function mostrarDados() {
+      var x = document.getElementById("dados");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    
+    function mostrarEscolaridade() {
+      var x = document.getElementById("escolaridade");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+</BODY>
+</HTML>
